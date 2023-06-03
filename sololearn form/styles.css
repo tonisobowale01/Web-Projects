@@ -1,0 +1,237 @@
+/*
+    Sololearn Form Page
+    Created by T0N1, June 01 2023.
+    All rights reserved.
+  */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+:root {
+  --bg-color: #f2f5f7;
+  --google: #db4437;
+  --aapl: #000000;
+  --fb: #4267b2;
+  --primary: #666666;
+  --secondary: #6b7f99;
+  --tertiary: #cccccc;
+  --link1: #2493df;
+  --link2: #339ae1;
+  --inner: #2d3846;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary);
+  font-family: "Fira Sans", sans-serif;
+  font-size: 100%;
+  padding: 32px 24px;
+  height: 30vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.5em;
+  line-height: 1em;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 378px;
+  min-width: 200px;
+}
+
+label {
+  display: block;
+  margin: 0.7rem 0;
+  color: var(--secondary);
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+label > input {
+  color: var(--inner);
+  border: 1px solid #c8d2db;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 8px;
+  height: 3em;
+  font-size: 1em;
+  line-height: 120%;
+  padding: 1rem;
+}
+
+label > input:focus {
+  outline: 1px solid #2493df;
+}
+
+.first {
+  display: flex;
+  flex-direction: row-reverse;
+  color: var(--link1);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  height: 2em;
+  color: #fff;
+  background-color: var(--link1);
+  padding: 0 48px;
+  font-size: 1em;
+  line-height: 1;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  min-height: 3em;
+  border-radius: 4px;
+  border: 0;
+}
+/* Created by T0N1. May 30 2023. */
+.divider {
+  margin: 24px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+  color: var(--tertiary);
+}
+
+.divider_line {
+  background-color: var(--tertiary);
+  height: 1px;
+  width: 100%;
+}
+
+.divider_name {
+  margin: 0 8px;
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.other_item {
+  cursor: pointer;
+  height: 48px;
+  position: relative;
+  text-align: center;
+  font-size: 100%;
+}
+
+.other_item:nth-child(2) {
+  margin: 16px 0;
+}
+
+.other_item button {
+  width: 100%;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  padding: 1px 6px;
+}
+
+.end {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  height: 24px;
+  width: 24px;
+  left: 12px;
+  z-index: 90;
+}
+.google {
+  background-color: var(--google);
+}
+
+.apple {
+  background-color: var(--aapl);
+}
+
+.facebook {
+  background-color: var(--fb);
+}
+/* Created by T0N1. May 30 2023. */
+footer {
+  margin: 1.5em auto;
+  text-align: center;
+  width: 100%;
+}
+
+p > span {
+  color: var(--link2);
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.copy {
+  margin-top: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link1);
+}
+
+.terms {
+  margin-top: 100px;
+}
+@media only screen and (min-width: 599px) {
+  .form-container {
+    margin-top: 4%;
+    overflow: hidden;
+  }
+
+  h1 {
+    margin-bottom: 32px;
+  }
+  label {
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+  .divider {
+    margin: 48px 0 10px;
+  }
+  .other {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  .other_item {
+    width: 119px;
+    position: relative;
+    height: 48px;
+  }
+  .other_item:hover {
+    opacity: 0.7;
+  }
+  .end {
+    left: 5px;
+    height: 23px;
+    width: 20px;
+  }
+  footer {
+    margin-top: 1.2rem;
+  }
+}

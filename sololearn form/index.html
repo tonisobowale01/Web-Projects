@@ -1,0 +1,172 @@
+<!--
+    Sololearn Form Page
+    Created by T0N1, June 01 2023.
+    All rights reserved.
+   -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sololearn Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="form-container">
+      <div id="signin">
+        <h1>Sign In</h1>
+        <!-- A form element will contain the input and submit field -->
+        <form>
+          <label for="email"
+            >Email<input type="email" id="email" required
+          /></label>
+          <!-- I implemented something that was different from the one on the official sololearn page -->
+          <label for="password"
+            >Password<input type="password" id="password" required
+          /></label>
+          <p class="first" title="I can't believe you forgot your password">
+            Forgot Password?
+          </p>
+          <input type="submit" value="Sign in" />
+          <div class="divider">
+            <span class="divider_line"></span>
+            <span class="divider_name">or</span>
+            <span class="divider_line"></span>
+          </div>
+          <!-- This is the social login links -->
+          <section class="other">
+            <div class="other_item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 488 512"
+                fill="white"
+                class="end"
+              >
+                <path
+                  d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+                />
+              </svg>
+              <button class="google">Google</button>
+            </div>
+            <div class="other_item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                fill="white"
+                class="end"
+              >
+                <path
+                  d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+                />
+              </svg>
+              <button class="apple">Apple</button>
+            </div>
+            <div class="other_item meta">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                fill="white"
+                class="end"
+              >
+                <path
+                  d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+                />
+              </svg>
+              <button class="facebook">Facebook</button>
+            </div>
+          </section>
+        </form>
+        <!-- Created by T0N1. May 30 2023. -->
+        <footer>
+          <p>
+            New to Sololearn?<span onclick="toggleForm()"
+              >Create an account</span
+            >
+          </p>
+        </footer>
+      </div>
+      <div id="signup" style="display: none">
+        <h1>Sign Up</h1>
+        <form>
+          <label for="email1"
+            >Email<input type="email" id="email1" required />
+          </label>
+
+          <label for="name1"
+            >Name
+            <input type="text" id="name1" required />
+          </label>
+
+          <label for="password1"
+            >Password<input type="password" id="password1" required
+          /></label>
+          <input type="submit" value="Sign up" />
+          <p class="copy">
+            This site was created by T0N1 and the Thiva
+            <a href="#"> Privacy Policy </a>and
+            <a href="#">Terms of Service</a> apply.
+          </p>
+
+          <div class="divider">
+            <span class="divider_line"></span>
+            <span class="divider_name">or</span>
+            <span class="divider_line"></span>
+          </div>
+
+          <section class="other">
+            <div class="other_item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 488 512"
+                fill="white"
+                class="end"
+              >
+                <path
+                  d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+                />
+              </svg>
+              <button class="google">Google</button>
+            </div>
+            <div class="other_item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                fill="white"
+                class="end"
+              >
+                <path
+                  d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"
+                />
+              </svg>
+              <button class="apple">Apple</button>
+            </div>
+            <div class="other_item meta">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                fill="white"
+                class="end"
+              >
+                <path
+                  d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+                />
+              </svg>
+              <button class="facebook">Facebook</button>
+            </div>
+          </section>
+        </form>
+
+        <footer>
+          <p>
+            Already have an account?<span onclick="toggleForm()">Sign in</span>
+          </p>
+          <p class="terms">
+            By signing up you agree to our <a href="#">Terms of Use</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
