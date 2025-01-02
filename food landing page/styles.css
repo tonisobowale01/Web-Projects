@@ -74,7 +74,7 @@ main img {
 
 @media screen and (min-width: 700px) {
   main {
-    margin: 7rem auto;
+    margin: 10rem auto;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;

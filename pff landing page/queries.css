@@ -1,0 +1,59 @@
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 95%;
+  }
+  #home {
+    gap: 17rem;
+  }
+  .second {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .article-menu {
+    /* width: 75rem;® */
+    background-color: transparent;
+  }
+}
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 90%;
+  }
+  #home {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  #home .big-logo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  nav .menu-bar {
+    display: block;
+  }
+  nav ul {
+    height: calc(100vh - 53.4px);
+    width: 100vw;
+    position: fixed;
+    top: 67.32px;
+    left: -100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary), var(--sub1));
+    transition: 1s;
+  }
+  nav ul li a:hover {
+    background-color: var(--tertiary);
+    width: 100%;
+  }
+  #home .btns {
+    gap: 10rem;
+    
+  }
+  .btn-primary,
+.btn-secondary {
+  font-size: 1.5rem;
+}
+}
